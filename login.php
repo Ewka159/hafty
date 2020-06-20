@@ -101,7 +101,7 @@
         <div class="textE2">Zaloguj się </div>
             <input type="text"  name="urname"  placeholder= "Email" value="">
             <input type="password" name="passwd" placeholder="Password" value="">
-            <a href="#" class="zapomnianes"> Zapomniałeś hasła?</a>
+            
             <button type="submit" class="btn" name="log">Logowanie</button>
 
         </div>
