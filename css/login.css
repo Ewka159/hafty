@@ -1,0 +1,58 @@
+
+.container1
+
+{
+    width: 450px;
+    height: 500px;
+    background: linear-gradient(to bottom right,#5171d1,#809aeb);
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 20px;
+    padding-top: 20px;
+    margin-bottom: 200px;
+}
+label{
+    font-size: 38px;
+    margin-left: 139px;
+    font-family: "Sofia";
+    font-size:34px;
+    color: #800080
+}
+input{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 65px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.btn
+{
+    width: 330px;
+    height: 40px;
+    margin-left: 67px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: "Sofia";
+    font-size:24px;
+    background-color: #204ac8;
+    cursor: pointer;
+}
+.zapomnianes{  
+    font-family: "Sofia";
+    font-size:24px;
+    color: #800080;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.textE2{
+    color: #800080; 
+    font-family: 'Akronim';
+    margin-left: 70px;
+    font-size:78px;
+
+}

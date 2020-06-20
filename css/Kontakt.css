@@ -1,0 +1,36 @@
+
+.textE1{
+    font-family: 'Akronim';
+  font-size:80px;
+  color: #800080;
+   text-align: center;
+    margin-bottom: -15px;
+    margin-top: -5%;
+}
+
+p.detail { 
+    font-family: "Sofia";
+    font-size:34px;
+    color: black;
+    font-weight:normal;
+   
+}
+b.name { 
+    font-weight:bold;
+  
+    font-family: "Sofia";
+    font-size:34px;
+    color: #800080;
+}
+
+
+.background{
+
+    padding: 3%;
+    width: auto;
+    height: auto;
+    min-height: 450px;
+    border-radius: 1px;
+    background: linear-gradient(to bottom right,#5171d1,#809aeb);
+    opacity: 0.8;
+}

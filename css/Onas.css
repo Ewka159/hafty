@@ -1,0 +1,50 @@
+.pudelko
+{
+  background: linear-gradient(to bottom right,#5171d1,#809aeb);
+}
+
+
+.col-4-lg
+{     
+  margin-top:3%;
+  margin-left: 3%;  margin-right: 3%;
+  margin-top:3%;
+ 
+}
+p{
+  margin-left: 3%;
+}
+.left
+{
+  margin-left: 3%;
+}
+.main
+{
+  font-family: "Sofia";
+  font-size:18px;
+  
+}
+.pudelko-title {
+  font-family: "Sofia";
+  font-size:34px;
+  color: #800080
+}
+.detail {
+  font-family: "Sofia";
+  font-size:34px;
+  color: #800080
+}
+.container1 
+{
+  
+  margin-top:25px;
+  margin-left: 10px;  
+  margin-right: 10px;
+  margin-bottom:100px;
+}
+.pudelko:hover
+{
+-webkit-box-shadow : -1px 9px 40px -12px rgba(0,0,0,0.75);
+-moz-box-shadow : -1px 9px 40px -12px rgba(0,0,0,0.75);
+box-shadow:-1px 9px 40px -12px   rgba(0,0,0,0.75);;
+}
