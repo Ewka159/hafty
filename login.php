@@ -84,7 +84,8 @@
          $count=mysqli_num_rows($result);
          if($count==1)
          {
-          header("location:index.php");
+                header("location:index.php");
+
          }
      }
 

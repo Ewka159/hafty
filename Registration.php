@@ -193,7 +193,7 @@ if($boolen)
   function NewUser()
   {
     $sql= "INSERT INTO regi (urname,email,passwd,fname,gender) 
-Values('".$_POST["urname"]."','".$_POST["email"]."','".$_POST["passwd"]."','".$_POST["fname"]."','".$_POST["gender"]."')";
+Values('".$_POST["urname"]."','".$_POST["email"]."','".$_POST["passwd"]."','".$_POST["fname"]."')";
     
     
     
