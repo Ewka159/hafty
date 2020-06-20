@@ -71,19 +71,20 @@
  <?php
  
  $con=mysqli_connect("localhost","root","", "logindb");
- if(isset($_POST['log'])){
-     $username = mysqli_real_escape_string($con,$_POST['email']);
-     $passwd = mysqli_real_escape_string($con,$_POST['password']);
-     if($username!="" && $passwd!="")
+ if(!isset($_POST["con"])){
+     $urname = mysqli_real_escape_string($con,$_POST['urname']);
+     $passwd = mysqli_real_escape_string($con,$_POST['passwd']);
+
+     if($urname!="" && $passwd!="")
      {
-         $sql="SELECT id FROM login WHERE username='$username' and passwd='$passwd'";
+         $sql="SELECT id FROM regi WHERE urname='$urname' and passwd='$passwd'";
          $result=mysqli_query($con,$sql);
         
          $row =mysqli_fetch_array($result,MYSQLI_ASSOC);
          $count=mysqli_num_rows($result);
          if($count==1)
          {
-           header("location:index.php");
+          header("location:index.php");
          }
      }
 
@@ -97,8 +98,8 @@
     <form class="" action ="login.php" method="post">
         <div class="container1">
         <div class="textE2">Zaloguj się </div>
-            <input type="text"  name="email"  placeholder= "Email" value="">
-            <input type="password" name="password" placeholder="Password" value="">
+            <input type="text"  name="urname"  placeholder= "Email" value="">
+            <input type="password" name="passwd" placeholder="Password" value="">
             <a href="#" class="zapomnianes"> Zapomniałeś hasła?</a>
             <button type="submit" class="btn" name="log">Logowanie</button>
 
