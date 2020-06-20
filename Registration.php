@@ -83,7 +83,7 @@ $urerr="Nazwa użytkownika (wymagana)!";
 $boolen=false;
 
   } else{
-    $urname=valide_input($_POST["urname"]);
+    $urname=validate_input($_POST["urname"]);
     $boolen=true;
   }
 if(empty($_POST["email"]))
@@ -118,7 +118,7 @@ $perr=$lenght;
 $boolen=true;
  }else
  {
-   $passwd=valide_input($_POST["passwd"]);
+   $passwd=validate_input($_POST["passwd"]);
    $boolen=true;
 
  }
@@ -176,7 +176,7 @@ function strlenght($str)
   {
     $data=trim($data);
     $data=stripslashes($data);
-    $data=htmlspecialchar($data);
+    $data=htmlspecialchars($data);
     return $data; 
   }
 
@@ -184,10 +184,10 @@ function strlenght($str)
 if($boolen)
 {
   $dbname="logindb";
-  $con=mysqli_connect("localhost","root"," ",$dbname);
+  $con=mysqli_connect("localhost","root","",$dbname);
   if(!$con)
   {
-    die("połączenie się zepsuło:"+mysqli_connet_error());
+    die("połączenie się zepsuło:");
 
   }
   function NewUser()
@@ -274,11 +274,6 @@ if(isset($_POST["submit"]))
 
 <span id="span"> </span>
 <div class="radios">
-  <h4>Płeć :</h4>
-  <input type="radio" name="gender" value="Male">  
-  <label for="">Mężczyzna</label>
-  <input type="radio" name="gender" value="Fmale">  
-  <label for="">Kobieta</label>
 </div>
 
 
