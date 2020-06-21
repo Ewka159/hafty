@@ -142,14 +142,6 @@ $boolen=true;
    $name=validate_input($_POST["fname"]);
    $boolen=true;
  }
- if(empty($_POST["gender"]))
- {
-   $fnerr="Płeć obowiązkwa";
-   $boolen=false;
- }else{
-   $gender=validate_input($_POST["gender"]);
-   $boolen=false;
- }
  if(isset($_POST["ck1"]))
  {
    $boolen=true;
@@ -192,7 +184,7 @@ if($boolen)
   }
   function NewUser()
   {
-    $sql= "INSERT INTO regi (urname,email,passwd,fname,gender) 
+    $sql= "INSERT INTO regi (urname,email,passwd,fname) 
 Values('".$_POST["urname"]."','".$_POST["email"]."','".$_POST["passwd"]."','".$_POST["fname"]."')";
     
     
